@@ -1,0 +1,170 @@
+/*David Roost - Envoy Agency Code Test*/
+
+
+/******* font guide *******/
+
+
+/******* color guide *******/
+
+
+/******* UNIVERSAL STYLING *******/
+body {
+  background-color: rgb(51, 51, 51);
+  }
+
+#container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  }
+.separator-container {
+  text-align: center;
+  position: relative;
+  }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+  /*classes colors
+  red: rgb(217,14,10);
+  yellow: rgb(246, 143, 30);
+  blue: rgb(33,98, 188);*/
+  }
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+  }
+h6 {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(159, 159, 159);
+  }
+.white {
+  color: white;
+  }
+.orange {
+  color: rgb(227, 78, 51);
+  }
+
+
+/********************** NAVIGATION SECTION **********************/
+header {
+  margin-left: auto;
+  margin-right: auto;
+  }
+nav {
+  height: 60px;
+  }
+.nav-logo-left {
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  }
+.nav-logo-right {
+  float: right;
+  display: inline-block;
+  margin-right: 0px;
+  margin-top: -30px;
+  }
+ul li {
+  display: inline-block;
+  }
+ul li a{
+  margin-top: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  text-decoration: none;
+  }
+nav ul li:first-child{
+  display:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+.nav-section{
+  width: 940px;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transition: background-color 700ms linear;
+  -moz-transition: background-color 700ms linear;
+  -o-transition: background-color 700ms linear;
+  -ms-transition: background-color 700ms linear;
+  transition: background-color 700ms linear;
+  }
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/*<!-- ********************** CAROUSEL SECTION ********************** -->*/
+
+
+
+/*<!-- ********************** MOBILE RESPONSIVE SECTION ********************** -->*/
+
+@media screen and (max-width:940px){
+
+  .nav-logo-right{
+    display: none;
+    }
+  .nav-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    }
+
+  h6.white{
+    color: rgb(159, 159, 159);
+    }
+  .nav-logo-left {
+    margin-left: 20px;
+    }
+
+ @media screen and (max-width:768px){
+
+  nav {
+    height: 60px;
+    transition: 1s height;
+    float: none;
+    text-align:center;
+    }
+  .open{
+    height: 200px;
+    }
+  .close {
+    height: 0px;
+    }
+  .line{
+    width: 25px;
+    height: 3px;
+    background: rgb(178, 0, 0);
+    margin-top: 3px;
+    }
+  nav ul li:first-child {
+    padding-top: 9px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display:block;
+    }
+  ul li {
+    display: block;
+    }
+  ul li a {
+    margin-top: 10px;
+    }
+  ul {
+    padding-top: 50px;
+    }
