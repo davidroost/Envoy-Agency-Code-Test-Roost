@@ -321,7 +321,7 @@ a.slide_btn {
   }
 #project-01 {
   max-height: 160px;
-  background-image: url('../content/project-01.png');
+  background-image: src("../content/project-01.png");
   }
 #project-02 {
   max-height: 160px;
