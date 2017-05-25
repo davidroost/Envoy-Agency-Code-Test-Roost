@@ -1,7 +1,5 @@
 /*David Roost - Envoy Agency Code Test*/
 
-
-
 /********************** UNIVERSAL STYLING **********************/
 body {
   background-color: rgb(29, 29, 29);
@@ -93,7 +91,9 @@ a {
   border-top: 1px solid rgb(40,40,40);
   margin-top: 20px;
   }
+
 /********************** NAVIGATION SECTION **********************/
+
 header {
   margin-left: auto;
   margin-right: auto;
@@ -152,7 +152,6 @@ nav ul li:first-child{
 /*<!-- ********************** CAROUSEL SECTION ********************** -->*/
 
 .carousel {
-/*position:absolute;*/
   z-index: -1;
   }
 .slider {
@@ -266,10 +265,10 @@ a.slide_btn {
   text-align: right;
   }
 #slider-text {
-  width: 400px;
+  width: 375px;
   }
 #slider-text-right {
-  width: 400px;
+  width: 375px;
   float: right;
   text-align: right;
   }
@@ -281,6 +280,7 @@ a.slide_btn {
   }
 
 /*<!-- ********************** FEATURED WORK SECTION ********************** -->*/
+
 #sub-header {
   margin-bottom: 20px;
   }
@@ -363,29 +363,49 @@ a.slide_btn {
   text-align: left;
   padding-bottom: 700px;
   }
+
 /*<!-- ********************** FOOTER SECTION ********************** -->*/
 
-
-  .footer-logo {
-    margin-top: 5px;
-    display: block;
-    width: 100px;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    }
-  footer h6 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
+.footer-logo {
+  margin-top: 5px;
+  display: block;
+  width: 100px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  }
+footer h6 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  }
+a.phone {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(103, 217, 218);
+  text-decoration: none
   }
 
 /*<!-- ********************** MOBILE RESPONSIVE SECTION ********************** -->*/
 
-
 @media screen and (max-width:990px){
+
+  h1 {
+    text-shadow: 2px 2px 4px #ffffff;
+    }
+  #slider-text, #slider-text-right {
+    padding: 15px;
+    background-color: rgba(55, 55, 55, 0.61);
+    }
+  h6#slider-text, h6#slider-text-right {
+    color: white;
+    }
+  h1.orange {
+    text-shadow: 2px 2px 4px #000000;
+    }
   .slide_viewer {
     height: 500px;
     }
@@ -435,94 +455,93 @@ a.slide_btn {
     clear:both;
     }
 
-
 }
 
  @media screen and (max-width:768px){
 
-  #sub-header {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-  #we-are {
-    width: 95%;
-    margin-top: -40px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-  .project-box {
-    height:160px;
-    margin-bottom: 150px;
-    display: block;
-    width: 90%;
-    margin-left:5%;
-    }
-  #project-01.project-box {
-    margin-left: 5%;
-    }
-  #project-image h4{
-    margin-top: 180px;
-    }
-  .previous_btn {
-    display: none;
-    }
-  .next_btn {
-    display: none;
-    }
-  nav {
-    height: 60px;
-    transition: 1s height;
-    float: none;
-    text-align:center;
-    }
-  .open{
-    height: 200px;
-    }
-  .close {
-    height: 0px;
-    }
-  .line{
-    width: 25px;
-    height: 3px;
-    background: rgb(178, 0, 0);
-    margin-top: 3px;
-    }
-  nav ul li:first-child {
-    padding-top: 9px;
-    margin-top: 10px;
-    margin-right: 10px;
-    display:block;
-    }
-  ul li {
-    display: block;
-    }
-  ul li a {
-    margin-top: 10px;
-    }
-  ul {
-    padding-top: 50px;
-    }
-  .previous_btn {
-    left: 50px;
-    }
-  .next_btn {
-    right: 50px;
-    }
-  .news-box {
-    height:60px;
-    margin-bottom: 60px;
-    display: block;
-    width: 90%;
-    margin-left:5%;
-    text-align: center;
-    }
-  #news-01.news-box {
-    margin-left: 5%;
-    }
-  .wire-section {
-    padding-top: 40px;
-    clear:both;
-    }
+    #sub-header {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+    #we-are {
+      width: 95%;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+    .project-box {
+      height:160px;
+      margin-bottom: 150px;
+      display: block;
+      width: 90%;
+      margin-left:5%;
+      }
+    #project-01.project-box {
+      margin-left: 5%;
+      }
+    #project-image h4{
+      margin-top: 180px;
+      }
+    .previous_btn {
+      display: none;
+      }
+    .next_btn {
+      display: none;
+      }
+    nav {
+      height: 60px;
+      transition: 1s height;
+      float: none;
+      text-align:center;
+      }
+    .open{
+      height: 200px;
+      }
+    .close {
+      height: 0px;
+      }
+    .line{
+      width: 25px;
+      height: 3px;
+      background: rgb(178, 0, 0);
+      margin-top: 3px;
+      }
+    nav ul li:first-child {
+      padding-top: 9px;
+      margin-top: 10px;
+      margin-right: 10px;
+      display:block;
+      }
+    ul li {
+      display: block;
+      }
+    ul li a {
+      margin-top: 10px;
+      }
+    ul {
+      padding-top: 50px;
+      }
+    .previous_btn {
+      left: 50px;
+      }
+    .next_btn {
+      right: 50px;
+      }
+    .news-box {
+      height:60px;
+      margin-bottom: 60px;
+      display: block;
+      width: 90%;
+      margin-left:5%;
+      text-align: center;
+      }
+    #news-01.news-box {
+      margin-left: 5%;
+      }
+    .wire-section {
+      padding-top: 40px;
+      clear:both;
+      }
 
 }
