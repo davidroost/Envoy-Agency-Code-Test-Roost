@@ -180,16 +180,16 @@ nav ul li:first-child{
   background-position: center;
   }
 #django {
-  background-image: url('CONTENT/django.jpg');
+  background-image: url("../Content/django.jpg");
   }
 #vizio {
-  background-image: url('CONTENT/vizio.jpg');
+  background-image: url("../Content/vizio.jpg");
   }
 #escape {
-  background-image: url('CONTENT/escape.jpg');
+  background-image: url("../Content/escape.jpg");
   }
 #ultra {
-  background-image: url('CONTENT/ultra.jpg');
+  background-image: url("../Content/ultra.jpg");
   }
 .slide:first-child {
   display: block;
@@ -323,11 +323,11 @@ a.slide_btn {
   }
 #project-02 {
   max-height: 160px;
-  background-image: url("CONTENT/project-02.png");
+  background-image: url("../Content/project-02.png");
   }
 #project-03 {
   max-height: 160px;
-  background-image: url("CONTENT/project-03.png");
+  background-image: url("../Content/project-03.png");
   }
 
 /*<!-- ********************** WIRE SECTION ********************** -->*/
