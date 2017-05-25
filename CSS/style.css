@@ -319,15 +319,15 @@ a.slide_btn {
   }
 #project-01 {
   max-height: 160px;
-  background-image: url("/CONTENT/project-01.png");
+  background-image: url("CONTENT/project-01.png");
   }
 #project-02 {
   max-height: 160px;
-  background-image: url("https://github.com/davidroost/Envoy-Agency-Code-Test-Roost/blob/master/Content/project-02.png");
+  background-image: url("CONTENT/project-02.png");
   }
 #project-03 {
   max-height: 160px;
-  background-image: url("/CONTENT/project-03.png");
+  background-image: url("CONTENT/project-03.png");
   }
 
 /*<!-- ********************** WIRE SECTION ********************** -->*/
