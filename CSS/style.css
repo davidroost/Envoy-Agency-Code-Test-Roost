@@ -180,16 +180,16 @@ nav ul li:first-child{
   background-position: center;
   }
 #django {
-  background-image: url('../content/django.jpg');
+  background-image: url('CONTENT/django.jpg');
   }
 #vizio {
-  background-image: url('../content/vizio.jpg');
+  background-image: url('CONTENT/vizio.jpg');
   }
 #escape {
-  background-image: url('../content/escape.jpg');
+  background-image: url('CONTENT/escape.jpg');
   }
 #ultra {
-  background-image: url('../content/ultra.jpg');
+  background-image: url('CONTENT/ultra.jpg');
   }
 .slide:first-child {
   display: block;
@@ -321,15 +321,15 @@ a.slide_btn {
   }
 #project-01 {
   max-height: 160px;
-  background-image: url("../content/project-01.png");
+  background-image: url("CONTENT/project-01.png");
   }
 #project-02 {
   max-height: 160px;
-  background-image: url('../content/project-02.png');
+  background-image: url("CONTENT/project-02.png");
   }
 #project-03 {
   max-height: 160px;
-  background-image: url('../content/project-03.png');
+  background-image: url("CONTENT/project-03.png");
   }
 
 
