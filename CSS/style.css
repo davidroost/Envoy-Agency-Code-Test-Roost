@@ -58,6 +58,9 @@ h6 {
   font-weight: 400;
   color: rgb(159, 159, 159);
   }
+a {
+  text-decoration: none;
+  }
 #left-padding-same-line {
   padding-left: 10px;
   }
@@ -409,9 +412,10 @@ a.slide_btn {
     margin-left: 20px;
     }
   .wire-section {
-    padding-top: 10px;
+    padding-top: 120px;
     clear:both;
     }
+
 
 }
 
@@ -497,9 +501,9 @@ a.slide_btn {
   #news-01.news-box {
     margin-left: 5%;
     }
-  #project-image h4{
-    margin-top: 180px;
+  .wire-section {
+    padding-top: 40px;
+    clear:both;
     }
-
 
 }
