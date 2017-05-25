@@ -361,10 +361,29 @@ a.slide_btn {
 .news-category {
   clear:both;
   text-align: left;
-  padding-bottom: 500px;
+  padding-bottom: 700px;
+  }
+/*<!-- ********************** FOOTER SECTION ********************** -->*/
+
+
+  .footer-logo {
+    margin-top: 5px;
+    display: block;
+    width: 100px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  footer h6 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
 /*<!-- ********************** MOBILE RESPONSIVE SECTION ********************** -->*/
+
 
 @media screen and (max-width:990px){
   .slide_viewer {
