@@ -16,7 +16,13 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
+  background-color: rgb(51, 51, 51);
+  }
+#below-carousel {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(51, 51, 51);
   }
 .separator-container {
   text-align: center;
@@ -27,14 +33,16 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 62px;
   font-weight: 600;
+  margin-top: 200px;
+
   /*classes colors
   red: rgb(217,14,10);
   yellow: rgb(246, 143, 30);
   blue: rgb(33,98, 188);*/
   }
 h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 62px;
+  font-family: 'Arial', sans-serif;
+  font-size: 35px;
   font-weight: 600;
   }
 h6 {
@@ -43,13 +51,33 @@ h6 {
   font-weight: 400;
   color: rgb(159, 159, 159);
   }
+h5 {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(159, 159, 159);
+}
 .white {
   color: white;
   }
 .orange {
   color: rgb(227, 78, 51);
   }
-
+.red {
+  color: rgb(217, 14, 10);
+  }
+.yellow {
+  color: rgb(246, 143, 30);
+  }
+.aqua {
+  color: rgb(103, 217, 218);
+  }
+.blue {
+  color: rgb(33, 98, 188);
+  }
+.grey {
+  color: rgb(159, 159, 159);
+}
 
 /********************** NAVIGATION SECTION **********************/
 header {
@@ -104,16 +132,180 @@ nav ul li:first-child{
   background-color: rgba(0, 0, 0, 0.8);
   margin-left: auto;
   margin-right: auto;
+    z-index: 2;
+
   }
 
 /*<!-- ********************** CAROUSEL SECTION ********************** -->*/
+
+.carousel {
+/*position:absolute;*/
+  z-index: -1;
+  }
+
+.slider {
+  margin: 0 auto;
+  max-width: 1600px;
+  max-height: 690px;
+  }
+
+.slide_viewer {
+  height: 674px;
+  overflow: hidden;
+  position: relative;
+  }
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  }
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+/*
+   position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50%;  // half of height
+    margin-left:-50%;  // half of width
+    cursor:pointer;*/
+  }
+
+  #django {
+  background-image: url('../content/django.jpg');
+  }
+  #vizio {
+  background-image: url('../content/vizio.jpg');
+  }
+  #escape {
+  background-image: url('../content/escape.jpg');
+  }
+  #ultra {
+  background-image: url('../content/ultra.jpg');
+  }
+
+.slide:first-child {
+  display: block;
+  }
+
+.slide_buttons {
+  margin-top: -60px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  }
+a.slide_btn {
+  color: rgb(159, 159, 159);
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  }
+
+.slide_btn.active, .slide_btn:hover {
+  color: rgb(227, 78, 51);
+  cursor: pointer;
+  }
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+  }
+
+.previous_btn {
+  bottom: -220px;
+  left: 720px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  }
+
+.next_btn {
+  bottom: -220px;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  }
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+  }
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+  }
+
+.slider-text-left {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  }
+.slider-text-right {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  }
 
 
 
 /*<!-- ********************** MOBILE RESPONSIVE SECTION ********************** -->*/
 
-@media screen and (max-width:940px){
-
+@media screen and (max-width:990px){
+  .slide_viewer {
+    height: 500px;
+    }
+  .slider {
+    max-height: 520px;
+    }
+  .slider-text-left {
+    margin-left: 25px;
+    }
+  .slider-text-right {
+    margin-right: 25px;
+    }
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 100px;
+    }
+  h2 {
+    font-size: 22px;
+    }
+  .previous_btn {
+    left: 600px;
+    }
+  .next_btn {
+    right: 50px;
+    }
   .nav-logo-right{
     display: none;
     }
@@ -132,9 +324,14 @@ nav ul li:first-child{
   .nav-logo-left {
     margin-left: 20px;
     }
-
+}
  @media screen and (max-width:768px){
-
+  .previous_btn {
+    display: none;
+    }
+  .next_btn {
+    display: none;
+    }
   nav {
     height: 60px;
     transition: 1s height;
@@ -168,3 +365,13 @@ nav ul li:first-child{
   ul {
     padding-top: 50px;
     }
+
+
+
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
